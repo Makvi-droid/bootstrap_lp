@@ -4,51 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bootstrap Demo</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Handjet:wght@100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nerko+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Pixelify+Sans:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Guerrilla&family=Reddit+Sans+Condensed:wght@200..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=SUSE:wght@100..800&family=Space+Grotesk:wght@300..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 <body>
+    
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
-                    </li>
-                    
-            
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
-        </div>
-        
-    </nav>
+    <div class="navigation-two">
+        <ul>
+            <li><button type="button" class="btn btn-primary" style="background-color: #333333;">Log in</button></li>
+            <li><button type="button" class="btn btn-primary" style="background-color: #333333;">Sign Up</button></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1 class="content-h1">
+            Welcome
+        </h1>
+        <p class="content-p">"Discover innovative solutions designed to help you with ease and efficiency."</p>
+    </div>
+
+
+    <div class="d-flex align-items-center p-3">
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
+            aria-controls="staticBackdrop" style="background-color: #333333;">
+            <i class="fa-solid fa-table-columns"></i>
+        </button>
+    </div>
+
+
     <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
-        aria-labelledby="staticBackdropLabel" style="background-color: #0084ff;">
+        aria-labelledby="staticBackdropLabel" style="background-color: #333333;">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="staticBackdropLabel">Dashboard</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"
@@ -80,12 +75,99 @@
         </div>
     </div>
 
+    <form class="row g-3 needs-validation" novalidate>
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form-label">First name</label>
+          <input type="text" class="form-control" id="validationCustom01" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom02" class="form-label">Last name</label>
+          <input type="text" class="form-control" id="validationCustom02" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustomUsername" class="form-label">Username</label>
+          <div class="input-group has-validation">
+            <span class="input-group-text" id="inputGroupPrepend">@</span>
+            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+            <div class="invalid-feedback">
+              Please choose a username.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label for="validationCustom03" class="form-label">City</label>
+          <input type="text" class="form-control" id="validationCustom03" required>
+          <div class="invalid-feedback">
+            Please provide a valid city.
+          </div>
+        </div>
+        <div class="col-md-3">
+          <label for="validationCustom04" class="form-label">State</label>
+          <select class="form-select" id="validationCustom04" required>
+            <option selected disabled value="">Choose...</option>
+            <option>State 1</option>
+            <option>State 2</option>
+            <option>State 3</option>
+            <option>State 4</option>
+            <option>State 5</option>
+          </select>
+          <div class="invalid-feedback">
+            Please select a valid state.
+          </div>
+        </div>
+        <div class="col-md-3">
+          <label for="validationCustom05" class="form-label">Zip</label>
+          <input type="text" class="form-control" id="validationCustom05" required>
+          <div class="invalid-feedback">
+            Please provide a valid zip.
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck">
+              Agree to terms and conditions
+            </label>
+            <div class="invalid-feedback">
+              You must agree before submitting.
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Submit form</button>
+        </div>
+      </form>
+
+<footer class="footer">
+    
+    <i class="fa-brands fa-facebook" style="color: #ffffff;"></i><span class="link">BastaLink.com</span>
+    <i class="fa-brands fa-facebook-messenger" style="color: #ffffff;"></i><span class="link">BastaLink.com</span>
+    <i class="fa-brands fa-square-instagram" style="color: #ffffff;"></i><span class="link">BastaLink.com</span>
+      
+</footer>
 
 
-    <script src="https://kit.fontawesome.com/77d4dcdf26.js" crossorigin="anonymous"></script>
+      
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/77d4dcdf26.js" crossorigin="anonymous"></script>
+
 </body>
 
 </html>

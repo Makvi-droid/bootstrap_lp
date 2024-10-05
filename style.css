@@ -1,5 +1,236 @@
 :root{
-    --font: 'Roboto', 'Roboto Mono', 'Reddit Sans Condensed', 'Poppins', 'Oswald',
-    'Open Sans';
+    --normal-font: 'Roboto','Work Sans', 'Titillium Web', 'Roboto Mono', 'Reddit Sans Condensed',
+    'Poppins';
+    --accent-color: #8672FF;
+    --base-color: white;
+    --text-color: #2E2B41;
+    --input-color: #F3F0FF;
 }
+
+body{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('bg.jpg');;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.navigation-two{
+    position: relative;
+    left: 80vw;
+    font-family: 'Kanit', var(--normal-font);
+}
+
+.content-h1{
+    color: aliceblue;
+    font-family: 'Montserrat', var(--normal-font);
+    font-size: 6rem;
+    position: relative;
+    top: 1.3em;
+    left: 1.4em;
+}
+
+.content-p{
+    color: aliceblue;
+    position: relative;
+    top: 7em;
+    left: 8em;
+    font-size: 1.2rem;
+}
+
+.navigation-two ul{
+    display: flex;
+    gap: 1em;
+    font-size: 1.3rem;
+    
+}
+
+.navigation-two ul li{
+    list-style: none;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.btn-primary{
+    margin: 1.2em;
+}
+
+.offcanvas-title{
+    font-family: 'Kanit', var(--normal-font);
+}
+
+.offcanvas{
+    position: relative;
+    bottom: 3em;
+}
+
+#staticBackdrop{
+    color: aliceblue;
+    transition: 0.3s;
+}
+
+.offcanvas-list{
+    list-style: none;
+    cursor: pointer;
+}
+
+.offcanvas-list li{
+    padding: 10px;
+}
+
+.btn-outline-success{
+    font-family: 'Montserrat', var(--normal-font);
+}
+
+
+.offcanvas-list-two{
+    list-style: none;
+    cursor: pointer;
+}
+
+.offcanvas-list-two li{
+    padding: 10px;
+}
+
+.offcanvas-list,
+.offcanvas-list-two {
+    list-style: none; 
+    padding: 0; 
+    margin-left: 20px; 
+}
+
+.offcanvas-list li,
+.offcanvas-list-two li {
+    position: relative; 
+    padding: 10px 0; 
+    cursor: pointer; 
+}
+
+.underline {
+    position: relative; 
+    color: whitesmoke; 
+}
+
+.underline::after {
+    content: ''; 
+    position: absolute; 
+    left: 0; 
+    bottom: -5px; 
+    width: 100%; 
+    height: 2px; 
+    background-color: white; 
+    transform: scaleX(0); 
+    transform-origin: left; 
+    transition: transform 0.3s ease; 
+}
+
+.offcanvas-list li:hover .underline::after,
+.offcanvas-list-two li:hover .underline::after {
+    transform: scaleX(1); 
+}
+
+.d-grid{
+    position: relative;
+    left: 72vw;
+    bottom: 6.1vw;
+}
+
+.btn-primary{
+    border-radius: 20em;
+}
+
+.d-flex{
+    position: relative;
+    bottom: 17em;
+    color: #1f1f1f;
+}
+
+
+form {
+  background-color: #550091;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+  position: relative;
+  left: 58vw;
+  bottom: 20vh;
+}
+
+label {
+  font-weight: 500;
+  color: whitesmoke;
+}
+
+input, select {
+  border-radius: 6px;
+  border: 1px solid #ced4da;
+  padding: 10px;
+  font-size: 1rem;
+  color: #495057;
+  box-shadow: none;
+}
+
+.input-group-text {
+  border-radius: 6px 0 0 6px;
+  border-right: 0;
+}
+
+button[type="submit"] {
+  background-color: var(--accent-color);
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  border-radius: 6px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: var( --text-color);
+}
+
+
+.form-check-input {
+  width: 20px;
+  height: 20px;
+}
+
+.form-check-label {
+  margin-left: 10px;
+}
+
+.footer{
+  background-color: #1f1f1f;
+  width: 100vw;
+  height: 15vh;
+  gap: 1.2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-brands{
+  font-size: 2em;
+}
+
+.link{
+  color: var(--base-color);
+  gap: 1em;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
 
